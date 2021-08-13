@@ -18,12 +18,12 @@ def calc_average(a: int, b: int, c: int) -> Union[int, float]:
 
     :return: среднее арифметическое, округленное до 5 знаков
     """
-    result = None
-    return result
+    calc_average = (int(a) + int(b) + int(c)) / 3
+    return round(calc_average, 5)
 
 
 if __name__ == '__main__':
-    first = int(input('Введите первое число: '))
-    second = int(input('Введите второе число: '))
-    third = int(input('Введите третье число: '))
-    print(f'Среднее арифметическое: {calc_average(first, second, third)}')
+    a = int(input('Введите первое число: '))
+    b = int(input('Введите второе число: '))
+    c = int(input('Введите третье число: '))
+    print(f'Среднее арифметическое: {calc_average(a, b, c)}')
